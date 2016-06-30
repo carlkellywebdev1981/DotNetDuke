@@ -84,13 +84,14 @@ hr {
 .profile {
     height: 200px;
     width: 200px;
+    margin-top: -30px;
 }
 .portfolio-pic {
     margin-left: auto ! important;
     margin-right: auto ! important;
 }
 .icon-big {
-    font-size: 50px;
+    font-size: 70px;
     color: #19b5fe;
 
 }
@@ -102,18 +103,189 @@ hr {
 /*******  portfolio section  *******/
 
 #portfolio {
-    background-color: #19b5fe;
+    background-color: #f4f4f4;
 }
-.portfolio h2 {
+
+.portfolio-row {
+    padding-bottom: 0px;
+}
+
+.img-responsive {
+    height: auto;
+    width: 100%;
+    
+
+}
+.portfolio-item {
+    padding: 5px;
+    
+}
+
+
+
+/*******  blog  *******/
+
+.blog-hr {
+    height: 2px;
+    background-color: #19b5fe;
+    margin-bottom: 40px;
+    border-color: #19b5fe;
+}
+#blog {
+    
+    background: #625e6f; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #242d3e , #625e6f , #a49198); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,  #242d3e , #625e6f , #a49198#625e6f, #a49198); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,  #242d3e , #625e6f , #a49198); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,  #242d3e , #625e6f , #a49198); /* Standard syntax (must be last) */
+    padding-bottom: 70px;
+}
+
+.blog-row {
+    padding-bottom: 0px;
+}
+
+.blog p {
+    color: #fff;
+    text-align: center;
+    
+}
+.blog h2 {
     color: #fff;
 }
-.portfolio-hr {
-    height: 2px;
-    background-color: #fff;
+.ion-link:before {
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    /*padding-top: 100px;*/
+}
+.icon-blog {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    padding-right:;
+    float: none;
+}
+.blog-links {
+     list-style: none;
+    float: none;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-top: 80px;
+    
+    
+}
+.blog-row {
+    padding-bottom: 0px;
+}
+.blog-links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+.blog-links li a:link,
+.blog-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.ion-social-instagram {
+    padding-right:;
+}
+.ion-social-github.icon-blog {
+    color: #000;
+     
+}
+.ion-social-github.icon-blog:hover {
+    color: #000;
+     
+}
+.ion-social-twitter.icon-blog {
+    color:  #55acee;
+    
+}
+.ion-social-googleplus.icon-blog {
+    color:  #dd4b39;   
+}
+
+.ion-social-instagram.icon-blog {
+    color: #bc2a8d;
 }
 
 
+.blog-pic {
+    /*width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;*/
+    background-color: ;
+}
+.octocat {
+    width: 50px;
+    height: 50px;
+}
+/*#blog-col {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}*/
 
+
+/*******  form  *******/
+
+.section-form hr {
+    border: #19b5fe;
+}
+
+.section-form {
+    background-color: #222;
+    background-image: url(../images/map-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.formh2 {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.contact-form {
+    
+    width: 60%;
+    margin: 0 auto;  
+    color: #fff;
+    
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+
+    
+}
+select {
+    color: #838080;
+}
+*:focus {outline: none;}
+/*.map {
+    width: 100%;
+    height: 500px;
+} */
 
 /*******  buttons  *******/
 
@@ -176,7 +348,7 @@ input[type=submit]:active {
     text-align: center;
 }*/
 footer {
-    background-color: #999;
+    background-color: #000;
     padding:;
     text-align: center;
     
@@ -233,7 +405,9 @@ footer .row {
     -webkit-transition: color 0.4s;
     transition: color 0.4s;
 }
-
+.ion-social-github:hover {
+    color: #413e3e;
+}
 .ion-social-facebook:hover {
    color: #3b5998; 
 }
@@ -244,5 +418,69 @@ footer .row {
     color:  #dd4b39;   
 }
 .ion-social-instagram:hover {
-    color: #125688;
+    color: #bc2a8d;
+}
+
+
+@media(max-width:1197px) {
+    .ion-link:before {
+        padding-top: 70px;
+    }
+}
+
+@media(max-width:1000px) {
+    
+
+    .main-bg {
+        background-attachment: scroll;
+    }
+    .ion-link:before {
+        padding-top: 20px;
+    }
+    .profile {
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-responsive {
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+}
+    
+   
+@media only screen and (max-width: 480px) {
+    
+.main-bg {
+        background-attachment: scroll;
+    }
+
+.main-heading {
+    font-size: 45px;
+    
+}
+    
+.btn-ghost {
+    font-size: 15px;
+}
+   
+    .blog-pic {
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer-left {
+        width: 100%;
+        text-align: center !important;
+    }
+    .social-links {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
 }
