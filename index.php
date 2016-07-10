@@ -73,7 +73,7 @@
     <div class="text-box">
         
         <h1 class="main-heading animated fadeIn">HI I'M <span class= "name">CARL KELLY</span><br> <!--JUNIOR--> WEB DEVELOPER</h1>
-         <a class="btn btn-ghost" href="#about">EXPLORE</a>
+         <a class="btn btn-ghost" href="#about">HIRE ME</a>
         
       </div>
     
@@ -176,7 +176,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
           <div class="row">
              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="hovereffect">
@@ -215,8 +215,7 @@
                 </div>
               </div>
           </div>
-        
-    </div>
+        </div>
     </section>
       
       <section class="blog" id="blog">
@@ -243,7 +242,7 @@
                                     <li><a href="http://www.instagram.com/carlkelly1981/?hl=en" target="_blank"><i class="ion-social-instagram icon-blog"></i></a></li>
                                 </ul> 
                             </div>
-                            <div class="row">
+                            <div class="row link-row">
                                 <a href="http://www.theblog.carlkelly.net" target="_blank"><i class="ion-link icon-big"></i></a>
                                 <p>Click the link to visit my blog and see my journey</p>
                             </div>
@@ -265,7 +264,16 @@
                         <form method="post" action="mailer.php" class="contact-form">
                             
                             <div class="row form-row">
-                                                          </div>
+                              <?php
+                                if($_GET ["success"] ==1) {
+                                    echo "<div class=\"form-message success\">Thankyou! Your message has been sent.</div>";
+                                }
+                                if($_GET ["success"] ==-1) {
+                                    echo "<div class=\"form-message error\">Oops! Something went wrong. Please try again!</div>";
+                                }
+                                ?>                        
+                                                         
+                             </div>
                                <div class="row">
                                     <div class="col-md-3">
                                         <label for="name">Name</label>
